@@ -29,7 +29,10 @@ public class DataBootstrap implements CommandLineRunner{
         authorRepository.save(carlo);
         bookRepository.save(book1);
 
+        Book book2 = new Book("Il mio secondo libro", "321-abc");
+        book2.setAuthor(carlo);
         
+        bookRepository.save(book2);
         
     }
     
